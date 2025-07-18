@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Homepage = () => {
     return (
@@ -25,7 +26,8 @@ const Homepage = () => {
                         <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider">Contact Me</button>
                     </a>
                 </div>
-                <img src="/assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" />
+                <Image src="/assets/home.png" alt="Home" className="2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" />
+                {/* <img src="/assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
                 {/* <img src="/assets/bg.svg" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
             </div>
         </div>
