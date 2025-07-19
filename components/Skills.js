@@ -28,64 +28,64 @@ const Skills = () => {
         { id: 22, src: "/assets/skills/reduxToolKit.png", text: "React Redux" },
     ]
     const ProgrammingLangArray = [
-        { id: 1, src: "/assets/skills/html.png", text: "HTML" },
-        { id: 2, src: "/assets/skills/css.png", text: "CSS" },
-        { id: 3, src: "/assets/skills/javascript.png", text: "JavaScript" },
-        { id: 4, src: "/assets/skills/ts.png", text: "TypeScript" },
+        { id: 1, src: "assets/skills/html.png", text: "HTML" },
+        { id: 2, src: "assets/skills/css.png", text: "CSS" },
+        { id: 3, src: "assets/skills/javascript.png", text: "JavaScript" },
+        { id: 4, src: "assets/skills/ts.png", text: "TypeScript" },
         // { id: 5, src: "/assets/skills/jquery.png", text: "JQuery" },
-        { id: 5, src: "/assets/skills/sass.png", text: "SCSS" },
-        { id: 6, src: "/assets/skills/c.png", text: "C" },
+        { id: 5, src: "assets/skills/sass.png", text: "SCSS" },
+        { id: 6, src: "assets/skills/c.png", text: "C" },
     ]
     const FrontendArray = [
-        { id: 1, src: "/assets/skills/react_js.png", text: "React.js" },
-        { id: 2, src: "/assets/skills/Next_js.png", text: "Next.js" },
-        { id: 3, src: "/assets/skills/jquery.png", text: "JQuery" },
-        { id: 4, src: "/assets/skills/bootstrap.png", text: "BootStrap" },
-        { id: 5, src: "/assets/skills/mui.png", text: "MUI" },
-        { id: 6, src: "/assets/skills/tailwind.png", text: "TailwindCSS" },
-        { id: 7, src: "/assets/skills/antD.png", text: "AntD" },
-        { id: 8, src: "/assets/skills/react_js.png", text: "React Native" },
-        { id: 9, src: "/assets/skills/reduxToolKit.png", text: "React Redux" },
+        { id: 1, src: "assets/skills/react_js.png", text: "React.js" },
+        { id: 2, src: "assets/skills/Next_js.png", text: "Next.js" },
+        { id: 3, src: "assets/skills/jquery.png", text: "JQuery" },
+        { id: 4, src: "assets/skills/bootstrap.png", text: "BootStrap" },
+        { id: 5, src: "assets/skills/mui.png", text: "MUI" },
+        { id: 6, src: "assets/skills/tailwind.png", text: "TailwindCSS" },
+        { id: 7, src: "assets/skills/antD.png", text: "AntD" },
+        { id: 8, src: "assets/skills/react_js.png", text: "React Native" },
+        { id: 9, src: "assets/skills/reduxToolKit.png", text: "React Redux" },
     ]
     const BackendArray = [
-        { id: 1, src: "/assets/skills/node_js.png", text: "Node.js" },
-        { id: 2, src: "/assets/skills/rest_api.webp", text: "REST APIs" },
-        { id: 3, src: "/assets/skills/graphql.png", text: "GraphQL" },
+        { id: 1, src: "assets/skills/node_js.png", text: "Node.js" },
+        { id: 2, src: "assets/skills/rest_api.webp", text: "REST APIs" },
+        { id: 3, src: "assets/skills/graphql.png", text: "GraphQL" },
     ]
     const TestingArray = [
-        { id: 1, src: "/assets/skills/jest.png", text: "Jest" },
+        { id: 1, src: "assets/skills/jest.png", text: "Jest" },
         // { id: 2, src: "/assets/skills/react_test.png", text: "React Testing Library" },
-        { id: 2, src: "/assets/skills/react_test.png", text: "Enzyme" },
-        { id: 3, src: "/assets/skills/postman.png", text: "Postman" },
-        { id: 4, src: "/assets/skills/swagger.png", text: "Swagger UI" },
+        { id: 2, src: "assets/skills/react_test.png", text: "Enzyme" },
+        { id: 3, src: "assets/skills/postman.png", text: "Postman" },
+        { id: 4, src: "assets/skills/swagger.png", text: "Swagger UI" },
     ]
     const DatabaseArray = [
-        { id: 1, src: "/assets/skills/mongodb.jpg", text: "MongoDB" },
+        { id: 1, src: "assets/skills/mongodb.jpg", text: "MongoDB" },
     ]
     const ToolsPackageArray = [
-        { id: 1, src: "/assets/skills/webpack.png", text: "Webpack" },
-        { id: 2, src: "/assets/skills/vite.png", text: "Vite" },
+        { id: 1, src: "assets/skills/webpack.png", text: "Webpack" },
+        { id: 2, src: "assets/skills/vite.png", text: "Vite" },
     ]
     const PaymentArray = [
-        { id: 1, src: "/assets/skills/stripe.png", text: "Stripe" },
-        { id: 2, src: "/assets/skills/paytm.png", text: "Paytm" },
-        { id: 3, src: "/assets/skills/paypal.png", text: "PayPal" },
+        { id: 1, src: "assets/skills/stripe.png", text: "Stripe" },
+        { id: 2, src: "assets/skills/paytm.png", text: "Paytm" },
+        { id: 3, src: "assets/skills/paypal.png", text: "PayPal" },
         // { id: 4, src: "/assets/skills/git.png", text: "Google API" },
-        { id: 4, src: "/assets/skills/whatsapp.webp", text: "WhatsApp" },
-        { id: 5, src: "/assets/skills/dlhsoft.webp", text: "DlhSoft Library" },
+        { id: 4, src: "assets/skills/whatsapp.webp", text: "WhatsApp" },
+        { id: 5, src: "assets/skills/dlhsoft.webp", text: "DlhSoft Library" },
     ]
     const IDEArray = [
-        { id: 1, src: "/assets/skills/visual.jpg", text: "Visual Studio" },
-        { id: 2, src: "/assets/skills/visual_code.webp", text: "Visual Code" },
-        { id: 3, src: "/assets/skills/sublime.png", text: "Sublime Text" },
-        { id: 4, src: "/assets/skills/codeblocks.png", text: "Code::Blocks" },
+        { id: 1, src: "assets/skills/visual.jpg", text: "Visual Studio" },
+        { id: 2, src: "assets/skills/visual_code.webp", text: "Visual Code" },
+        { id: 3, src: "assets/skills/sublime.png", text: "Sublime Text" },
+        { id: 4, src: "assets/skills/codeblocks.png", text: "Code::Blocks" },
     ]
     const VersionArray = [
-        { id: 1, src: "/assets/skills/git.png", text: "Git" },
-        { id: 2, src: "/assets/skills/github.png", text: "GitHub" },
-        { id: 3, src: "/assets/skills/gitlab.png", text: "GitLab" },
-        { id: 4, src: "/assets/skills/azure_devops.png", text: "Azure DevOps" },
-        { id: 5, src: "/assets/skills/git.png", text: "TFS (Team Foundation Server)" },
+        { id: 1, src: "assets/skills/git.png", text: "Git" },
+        { id: 2, src: "assets/skills/github.png", text: "GitHub" },
+        { id: 3, src: "assets/skills/gitlab.png", text: "GitLab" },
+        { id: 4, src: "assets/skills/azure_devops.png", text: "Azure DevOps" },
+        { id: 5, src: "assets/skills/git.png", text: "TFS (Team Foundation Server)" },
     ]
     const SkillsCategory = [
         { id: 1, name: "Programming Languages", array: ProgrammingLangArray },
