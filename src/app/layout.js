@@ -15,9 +15,25 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Milee Sonani",
   description: "Frontend Developer",
+  icons: {
+    icon: [
+      {
+        src: 'assets/Milee2.jpg',
+        url: 'assets/Milee2.jpg',
+        href: 'assets/Milee2.jpg',
+        type: 'image/x-icon',
+        sizes: '16x16',
+        as: 'image'
+      },
+    ],
+
+  },
 };
 
 export default function RootLayout({ children }) {
+  console.log('children', children)
+  console.log('geistSans', geistSans)
+  console.log('geistMono', geistMono)
   return (
     <html lang="en">
       <body
