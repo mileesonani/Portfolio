@@ -34,16 +34,16 @@ const Contact = () => {
                 </div>
                 <div className=" text-spanColor flex justify-center items-center ">
                     <a href="https://github.com/mileesonani" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
-                        <img src="/assets/contact/dark/github.svg" style={{ height: "28px", width: "28px" }} />
+                        <img src="assets/contact/dark/github.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
                     <a href="https://www.linkedin.com/in/milee-sonani" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
-                        <img src="/assets/contact/dark/linkedin.svg" style={{ height: "28px", width: "28px" }} />
+                        <img src="assets/contact/dark/linkedin.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
                     {/* <a href="#" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
                         Phone
                     </a> */}
                     <a href="" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
-                        <img src="/assets/contact/dark/gmail.svg" style={{ height: "28px", width: "28px" }} />
+                        <img src="assets/contact/dark/gmail.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
                 </div>
                 <div className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem] mb-[4rem]"></div>
