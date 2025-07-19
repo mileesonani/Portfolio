@@ -41,7 +41,7 @@ const Skills = () => {
         { id: 2, src: "assets/skills/Next_js.png", text: "Next.js" },
         { id: 3, src: "assets/skills/jquery.png", text: "JQuery" },
         { id: 4, src: "assets/skills/bootstrap.png", text: "BootStrap" },
-        { id: 5, src: "assets/skills/mui.png", text: "MUI" },
+        { id: 5, src: "assets/skills/Mui.png", text: "MUI" },
         { id: 6, src: "assets/skills/tailwind.png", text: "TailwindCSS" },
         { id: 7, src: "assets/skills/antD.png", text: "AntD" },
         { id: 8, src: "assets/skills/react_js.png", text: "React Native" },
