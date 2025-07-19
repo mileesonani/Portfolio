@@ -8,7 +8,7 @@ const About = () => {
                 <h1 className="gsap-heading-about text-[2.5rem] text-border tracking-[0.2rem]">About Me</h1>
             </div>
             <div className="gsap-container flex md:flex-row flex-col md:justify-around items-center md:mt-[2rem] mt-[1rem] mb-4 mx-[3rem]">
-                <img src="/assets/Milee1.jpg" width="315px" height="420px" />
+                <img src="assets/Milee1.jpg" width="315px" height="420px" />
                 <div className="flex flex-col">
                     <div className="flex items-center md:my-[1rem] mb-[1rem] mt-[4rem] md:ml-[3rem]">
                         <span className="gsap-sub-content-iden-about h-[0.8rem] w-[2rem] bg-spanColor rounded-[3px] mr-6 "></span>

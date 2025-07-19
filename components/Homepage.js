@@ -27,7 +27,7 @@ const Homepage = () => {
                     </a>
                 </div>
                 {/* <Image src="/assets/home.png" alt="Home" className="2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
-                <img src="/assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" />
+                <img src="./public/assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" />
                 {/* <img src="/assets/bg.svg" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
             </div>
         </div>
