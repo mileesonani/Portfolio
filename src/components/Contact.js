@@ -14,7 +14,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         // const apiPath = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
         console.log('window.location', window.location)
-        const apiPath = window.location.origin
+        const apiPath = window.location.href
         console.log('apiPath', apiPath)
         e.preventDefault();
         // enqueueSnackbar('Sending...', { variant: 'info' });
