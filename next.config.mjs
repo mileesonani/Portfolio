@@ -2,7 +2,7 @@
 const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
     basePath: isProd ? '/Portfolio' : '',
-    output: 'export',
+    // output: 'export',
     distDir: 'dist',
     images: {
         unoptimized: true
