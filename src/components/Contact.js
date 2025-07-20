@@ -12,10 +12,14 @@ const Contact = () => {
     };
 
     const handleSubmit = async (e) => {
+        // const apiPath = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+        console.log('window.location', window.location.origin)
+        const apiPath = window.location.origin
+        console.log('apiPath', apiPath)
         e.preventDefault();
         // enqueueSnackbar('Sending...', { variant: 'info' });
         try {
-            const response = await fetch("/api/sendEmail", {
+            const response = await fetch(`${apiPath}/api/sendEmail`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
