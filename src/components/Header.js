@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     const handleViewPDF = () => {
-        window.open('/assets/resume/Milee_Sonani_CV.pdf', '_blank');
+        window.open('assets/resume/Milee_Sonani_CV.pdf', '_blank');
     };
 
     return (

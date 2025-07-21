@@ -4,7 +4,7 @@ import PdfModal from './PdfModal'
 const About = () => {
     // for new tab
     const handleViewPDF = () => {
-        window.open('/assets/resume/Milee_Sonani_CV.pdf', '_blank');
+        window.open('assets/resume/Milee_Sonani_CV.pdf', '_blank');
     };
 
     // view in model
