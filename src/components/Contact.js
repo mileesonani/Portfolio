@@ -18,7 +18,8 @@ const Contact = () => {
         e.preventDefault();
         // enqueueSnackbar('Sending...', { variant: 'info' });
         try {
-            const response = await fetch(`${apiPath}/api/sendEmail`, {
+            // const response = await fetch(`${apiPath}/api/sendEmail`, {
+            const response = await fetch(`/api/sendEmail`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
