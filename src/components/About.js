@@ -58,7 +58,10 @@ const About = () => {
                         <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider"
                             onClick={handleViewPDF}
                         // onClick={() => setIsOpen(true)}
-                        >Resume</button>
+                        >
+                            Resume
+                            <img src="assets/resume/download.svg" style={{ width: "24px", height: "24px", marginLeft: "10px" }} />
+                        </button>
                     </a>
                     {/* <PdfModal
                         show={isOpen}
