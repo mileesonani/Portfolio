@@ -1,5 +1,5 @@
 "use client"; // This is a client component
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useSnackbar } from 'notistack'
 
 const Contact = () => {
@@ -34,6 +34,28 @@ const Contact = () => {
             enqueueSnackbar('An error occurred!', { variant: 'error' });
         }
     };
+
+    // gmail icon
+    const [showOptions, setShowOptions] = useState(false);
+    // const wrapperRef = useRef(null);
+
+    const toEmail = 'mileesonani08@gmail.com'; // Replace with desired email
+    const subject = 'Contact for';
+    const body = 'I wanted to reach out...';
+
+    const handleOpenClient = (client) => {
+        let url = '';
+        if (client === 'gmail') {
+            url = `https://mail.google.com/mail/?view=cm&fs=1&to=${toEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } else if (client === 'outlook') {
+            url = `https://outlook.office.com/mail/deeplink/compose?to=${toEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } else if (client === 'mailto') {
+            url = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+        window.open(url, '_blank');
+        setShowOptions(false);
+    };
+
     return (
         <div id="contact" className="pt-[6rem]">
             <div className="flex items-center relative">
@@ -80,7 +102,7 @@ const Contact = () => {
                     {/* <h1 className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem]">Contact Me On</h1> */}
                     <h1 className="sm:text-[1.2rem] text-[0.9rem] tracking-[0.4rem]" style={{ color: "black" }}>Contact Me On</h1>
                 </div>
-                <div className=" text-spanColor flex justify-center items-center ">
+                <div className="relative text-spanColor flex justify-center items-center ">
                     <a href="https://github.com/mileesonani" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
                         <img src="assets/contact/dark/github.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
@@ -90,10 +112,38 @@ const Contact = () => {
                     {/* <a href="#" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
                         Phone
                     </a> */}
-                    <a href="" target="_blank" rel="noreferrer" className="mx-[1rem] hover:text-border transition-all">
+                    <a className="mx-[1rem] hover:text-border transition-all"
+                        onClick={() => {
+                            // setShowOptions(!showOptions)
+                            handleOpenClient('mailto')
+                        }}
+                    >
                         <img src="assets/contact/dark/gmail.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
+                    {showOptions && (
+                        <div className="absolute top-0 right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+                            <button
+                                onClick={() => handleOpenClient('gmail')}
+                                className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                                Open in Gmail
+                            </button>
+                            <button
+                                onClick={() => handleOpenClient('outlook')}
+                                className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                                Open in Outlook
+                            </button>
+                            <button
+                                onClick={() => handleOpenClient('mailto')}
+                                className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                                Open in Default Mail App
+                            </button>
+                        </div>
+                    )}
                 </div>
+
                 <div className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem] mb-[4rem]"></div>
             </div>
         </div>
