@@ -53,7 +53,7 @@ const Contact = () => {
             url = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         }
         window.open(url, '_blank');
-        setShowOptions(false);
+        // setShowOptions(false);
     };
 
     return (
@@ -62,7 +62,7 @@ const Contact = () => {
                 <span className="gsap-iden-contect h-[1.5rem] w-[1.5rem] -z-50 bg-spanColor rounded-[3px] mr-6 "></span>
                 <h1 className="gsap-heading-contect text-[2.5rem] text-border tracking-[0.2rem]">Contact</h1>
             </div>
-            <div className="gsap-container-contect bg-white mx-[3rem] my-[8rem] rounded-lg shadow-2xl flex flex-col justify-center items-center md:mt-[4rem] mt-[2rem]">
+            <div className="gsap-container-contect bg-white mx-[3rem] my-[5rem] rounded-lg shadow-2xl flex flex-col justify-center items-center md:mt-[4rem] mt-[2rem]">
                 <div className="flex items-center my-[1rem] mt-[3rem]">
                     <span className="h-[0.8rem] w-[2rem] bg-spanColor rounded-[3px] mr-6 "></span>
                     {/* <h1 className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem]">Send Me A Note</h1> */}
@@ -70,12 +70,12 @@ const Contact = () => {
                 </div>
                 <form onSubmit={handleSubmit} className="contents">
                     <div className="flex md:flex-row flex-col items-center justify-evenly w-[100%] md:mt-[2rem] mt-[1rem]">
-                        <input className="border border-solid border-gray-300 form-control block md:w-[42.5%] w-[80%] px-4 py-2 font-normal text-gray-700 bg-white bg-clip-padding rounded transition ease-in-out md:m-0 my-2 focus:text-gray-700 focus:bg-white focus:border-secondary1 focus:outline-none"
+                        <input className="border border-solid border-gray-300 form-control block md:w-[42.5%] w-[90%] px-4 py-2 font-normal text-gray-700 bg-white bg-clip-padding rounded transition ease-in-out md:m-0 my-2 focus:text-gray-700 focus:bg-white focus:border-secondary1 focus:outline-none"
                             id="name" placeholder="Your Name" type="text" name="name"
                             value={formData.name}
                             onChange={handleChange}
                             required />
-                        <input className="border border-solid border-gray-300 form-control block md:w-[42.5%] w-[80%] px-4 py-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out md:m-0 my-2 focus:text-gray-700 focus:bg-white focus:border-secondary1 focus:outline-none"
+                        <input className="border border-solid border-gray-300 form-control block md:w-[42.5%] w-[90%] px-4 py-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out md:m-0 my-2 focus:text-gray-700 focus:bg-white focus:border-secondary1 focus:outline-none"
                             id="email" placeholder="Your Email" type="email" name="email"
                             value={formData.email}
                             onChange={handleChange}
@@ -113,10 +113,8 @@ const Contact = () => {
                         Phone
                     </a> */}
                     <a className="mx-[1rem] hover:text-border transition-all"
-                        onClick={() => {
-                            // setShowOptions(!showOptions)
-                            handleOpenClient('mailto')
-                        }}
+                        // onClick={() => setShowOptions(!showOptions)}
+                        onClick={() => handleOpenClient('mailto')}
                     >
                         <img src="assets/contact/dark/gmail.svg" style={{ height: "28px", width: "28px" }} />
                     </a>
@@ -144,7 +142,7 @@ const Contact = () => {
                     )}
                 </div>
 
-                <div className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem] mb-[4rem]"></div>
+                <div className="sm:text-[1.2rem] text-[0.9rem] text-border tracking-[0.4rem] mb-[3rem]"></div>
             </div>
         </div>
     )

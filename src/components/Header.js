@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Header = () => {
+    const handleViewPDF = () => {
+        window.open('/assets/resume/Milee_Sonani_CV.pdf', '_blank');
+    };
+
     return (
         <nav className="flex justify-center items-center w-full fixed lg:h-[5rem] h-[3.rem] z-[1000] border-b-[1px] border-b-gray-200 bg-secondary2">
             <ul className="flex justify-between items-center w-full lg:text-[1.25rem] text-[1.05rem]">
@@ -26,7 +30,10 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="xl:mr-[5rem] lg:mr-[2.5rem] mr-[1rem]">
-                    <a href="/assets/resume/Milee_Sonani_CV.pdf" download target="_blank" rel="noreferrer">
+                    <a
+                        // href="/assets/resume/Milee_Sonani_CV.pdf" download target="_blank" rel="noreferrer"
+                        onClick={handleViewPDF}
+                    >
                         <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider">Resume</button>
                     </a>
                 </li>

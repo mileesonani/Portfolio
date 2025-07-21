@@ -123,3 +123,9 @@ a {
     /* color: rgb(191, 165, 142); */
     color: whitesmoke;
 }
+
+/* @media only screen and (max-width: 425px) {
+    contactWidth: {
+        width: 100%;
+    }
+} */
