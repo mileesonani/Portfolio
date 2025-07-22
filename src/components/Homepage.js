@@ -1,10 +1,9 @@
 import React from 'react'
-import Image from 'next/image';
 
 const Homepage = () => {
     return (
         // <div id="home" className="flex justify-center items-center lg:h-[53rem] h-[60rem] w-full z-[-10]">
-        <div id="home" className="flex justify-center items-center h-[90vh] w-full z-[-10] pt-12">
+        <div id="home" className="flex justify-center items-center h-[47rem] w-full z-[-10] pt-12">
             <div className="flex lg:flex-row lg:justify-around flex-col-reverse justify-center items-center w-full">
                 <div className="flex flex-col w-full">
                     <div className="flex items-center mt-24">
@@ -26,7 +25,6 @@ const Homepage = () => {
                         <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider">Contact Me</button>
                     </a>
                 </div>
-                {/* <Image src="/assets/home.png" alt="Home" className="2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
                 <img src="assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto hidden lg:block" />
                 {/* <img src="/assets/bg.svg" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto" /> */}
             </div>
