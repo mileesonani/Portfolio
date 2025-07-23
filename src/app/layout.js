@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
           jobTitle: "Frontend Developer",
           sameAs: [
             "https://github.com/mileesonani",
-            "https://linkedin.com/in/your-linkedin", // 🔁 Replace this
+            "https://www.linkedin.com/in/milee-sonani",
           ],
         })}
       </Script>

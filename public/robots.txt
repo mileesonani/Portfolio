@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mileesonani.github.io/Portfolio/sitemap.xml

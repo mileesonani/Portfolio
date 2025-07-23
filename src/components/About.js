@@ -42,7 +42,7 @@ const About = () => {
                         {/* lastone.....I bring not only technical expertise but also a strong foundation in Agile
                         methodologies, along with effective communication, teamwork, and leadership skills
                         that support seamless project execution and cross-team collaboration. */}
-                        I'm a web developer with experience in building scalable and responsive web
+                        I'm a frontend developer with experience in building scalable and responsive web
                         applications using React.js, Next.js, TypeScript, and modern UI libraries like
                         TailwindCSS, MUI, and Ant Design. I have a strong focus on creating clean, intuitive
                         user interfaces and seamless user experiences.

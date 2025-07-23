@@ -17,6 +17,8 @@
 /.next/
 /out/
 /dist/
+/public/sitemap.xml/
+/public/robots.txt/
 
 # production
 /build

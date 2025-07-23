@@ -15,14 +15,16 @@ const Homepage = () => {
                     <div className="flex items-center my-[1rem] md:ml-[3rem]">
                         <span className="gsap-sub-content-iden h-[0.8rem] w-[2rem] bg-spanColor rounded-[3px] mr-6 "></span>
                         <h1 className="gsap-sub-content xl:text-[1.2rem] text-[1rem] text-border tracking-[0.4rem]">
-                            Web Developer
+                            Frontend Developer
                         </h1>
                     </div>
                     <p className="gsap-p my-[1rem] md:ml-[3rem] sm:text-[1rem] text-[0.9rem] text-border tracking-wider lg:w-[70%]">
                         {/* Passionate about coding and experienced in making beautiful UI and providing great UX to the users. */}
                     </p>
                     <a href="#contact" className="gsap-contect-button w-fit my-[1rem] sm:ml-[3rem] ml-[32%]">
-                        <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider">Contact Me</button>
+                        <button className="button_fancy__vhaj8 py-[0.5rem] px-[1rem] rounded-[4px] bg-secondary1 text-[1.05rem] tracking-wider">
+                            Contact Me
+                        </button>
                     </a>
                 </div>
                 <img src="assets/home.png" className="gsap-illu-img 2xl:w-[35%] lg:w-[40%] md:w-[450px] sm:w-[375px] w-[300px] h-auto hidden lg:block" />
