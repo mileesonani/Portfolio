@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SkillSection from './SkillSection'
 import SkillCategory from './SkillCategory'
+import SkillAccordion from './SkillAccordion'
 
 const Skills = () => {
     const skillsArray = [
@@ -98,30 +99,35 @@ const Skills = () => {
         { id: 8, name: "IDEs & Code Editors", array: IDEArray },
         { id: 9, name: "Version Control & DevOps", array: VersionArray },
     ]
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // Set initial value
+        const checkScreenSize = () => setIsMobile(window.innerWidth < 750);
+
+        checkScreenSize(); // on mount
+
+        // Add event listener
+        window.addEventListener("resize", checkScreenSize);
+        return () => window.removeEventListener("resize", checkScreenSize);
+    }, []);
+
     return (
         <div id="skills" className="pt-[6rem] mb-[4rem]">
             <div className="flex items-center relative">
                 <span className="gsap-iden-skils h-[1.5rem] w-[1.5rem] -z-50 bg-spanColor rounded-[3px] mr-6 "></span>
                 <h1 className="gsap-heading-skils text-[2.5rem] text-border tracking-[0.2rem]">Skills</h1>
             </div>
-            {/* <div className="flex items-center md:my-[1rem] mb-[1rem] mt-[4rem] md:ml-[3rem]">
-                <span className="gsap-sub-content-iden-about h-[0.8rem] w-[2rem] bg-spanColor rounded-[3px] mr-6 "></span>
-                <p className="gsap-p-about my-[1rem] md:text-[1.3rem] text-[0.9rem] text-border tracking-wider ">
-                    Hello !!
-                </p>
-            </div> */}
-
             <div className="flex flex-col justify-evenly items-start mt-[4rem] mx-[3rem]">
-                {SkillsCategory.map((x) =>
-                    <SkillCategory key={x.id} name={x.name} array={x.array} />
-                )}
+                {isMobile ?
+                    <SkillAccordion items={SkillsCategory} /> :
+                    SkillsCategory.map((x) =>
+                        <SkillCategory key={x.id} name={x.name} array={x.array} />
+                    )
+                }
             </div>
-            {/* <div className="gsap-container-skils grid lg:grid-cols-5 grid-cols-3 content-center gap-12 md:w-[70%] w-[90%] md:mt-[4rem] mt-[2rem] mb-4 place-items-center md:ml-[13%] ml-[5%]"> */}
-            {/* <div className="gsap-container-skils grid lg:grid-cols-5 grid-cols-3 content-center gap-12 md:w-[70%] w-[90%] md:mt-[4rem] mt-[2rem] mb-4 place-items-center ml-[12%]">
-                {skillsArray.map((x) => (
-                    <SkillSection key={x.id} src={x.src} text={x.text} />
-                ))}
-            </div> */}
+
         </div>
     )
 }

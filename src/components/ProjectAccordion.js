@@ -14,7 +14,7 @@ export default function Accordion({ projectArray1, projectArray2 }) {
             <div className="w-full mx-2">
                 {projectArray1.map((item1, index1) => {
                     return (
-                        <div key={item1.id} className="overflow-hidden shadow-lg rounded-lg w-full border border-white mt-[1.5rem]">
+                        <div key={item1.id} className="overflow-hidden shadow-lg rounded-lg w-full border border-white my-[1rem]">
                             <button
                                 onClick={() => toggle(item1.id)}
                                 className={`text-lg font-medium w-full flex justify-between items-center px-4 py-3 text-left font-medium ${openIndex === item1.id && "border-b border-white"}`}
@@ -51,7 +51,7 @@ export default function Accordion({ projectArray1, projectArray2 }) {
             <div className="w-full mx-2">
                 {projectArray2.map((item2, index2) => {
                     return (
-                        <div key={item2.id} className="overflow-hidden shadow-lg rounded-lg w-full border border-white mt-[1.5rem]">
+                        <div key={item2.id} className="overflow-hidden shadow-lg rounded-lg w-full border border-white my-[1rem]">
                             <button
                                 onClick={() => toggle(item2.id)}
                                 className={`text-lg font-medium w-full flex justify-between items-center px-4 py-3 text-left font-medium ${openIndex === item2.id && "border-b border-white"}`}
