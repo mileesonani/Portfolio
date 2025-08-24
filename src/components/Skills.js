@@ -66,6 +66,9 @@ const Skills = () => {
     const ToolsPackageArray = [
         { id: 1, src: "assets/skills/webpack.png", text: "Webpack" },
         { id: 2, src: "assets/skills/vite.png", text: "Vite" },
+        { id: 3, src: "assets/skills/npm.png", text: "NPM" },
+        { id: 4, src: "assets/skills/yarn.png", text: "Yarn" },
+        { id: 5, src: "assets/skills/gulp.png", text: "Gulp" }
     ]
     const PaymentArray = [
         { id: 1, src: "assets/skills/stripe.png", text: "Stripe" },
