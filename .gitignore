@@ -19,6 +19,7 @@
 /dist/
 /public/sitemap.xml/
 /public/robots.txt/
+/src/lib/
 
 # production
 /build
