@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 // import "./globals.css";
 import "./global_dark.css";
 import Script from "next/script";
-import * as gtag from '../lib/gtag';
+// import * as gtag from '../lib/gtag';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,25 +13,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-// export const metadata = {
-//   title: "Milee Sonani",
-//   description: "Frontend Developer",
-//   icons: {
-//     icon: [
-//       {
-//         src: 'assets/Milee2.jpg',
-//         url: 'assets/Milee2.jpg',
-//         href: 'assets/Milee2.jpg',
-//         type: 'image/x-icon',
-//         sizes: '16x16',
-//         as: 'image'
-//       },
-//     ],
-
-//   },
-// };
-
 
 export const metadata = {
   title: "Milee Sonani | Frontend Developer",
@@ -64,6 +45,9 @@ export const metadata = {
   icons: {
     icon: "/assets/Milee2.jpg",
   },
+  verification: {
+    google: process.env.VERIFICATION_CODE
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -71,17 +55,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
       />
       <Script
-        id="gtag-init"
+        // id="gtag-init"
+        id="ga-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${gtag.GA_MEASUREMENT_ID}');
+              gtag('config', '${process.env.GA_MEASUREMENT_ID}');
             `,
         }}
       />
