@@ -1,0 +1,20 @@
+# Ignore build output and static files
+public/** linguist-vendored
+out/** linguist-vendored
+.next/** linguist-vendored
+
+# Ignore styles if they dominate
+styles/** linguist-vendored
+**/*.css linguist-vendored
+**/*.scss linguist-vendored
+
+# Optional: ignore config files
+*.config.js linguist-vendored
+*.config.cjs linguist-vendored
+*.config.ts linguist-vendored
+*.json linguist-vendored
+
+# Make sure .js/.ts/.tsx count as code
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
